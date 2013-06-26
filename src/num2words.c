@@ -2,65 +2,65 @@
 #include "string.h"
 
 static const char* const ONES[] = {
-  "cero",
-  "una",
-  "dos",
+  "zero",
+  "uma",
+  "duas",
   "tres",
-  "cuatro",
+  "quatro",
   "cinco",
   "seis",
-  "siete",
-  "ocho",
-  "nueve"
+  "sete",
+  "oito",
+  "nove"
 };
 
 static const char* const TEENS[] ={
-  "diez",
-  "once",
-  "doce",
-  "trece",
-  "catorce",
-  "quince",
-  "dieciséis",
-  "diecisiete",
-  "dieciocho",
-  "diecinueve"
+  "dez",
+  "onze",
+  "doze",
+  "treze",
+  "quatorze",
+  "quinze",
+  "dezesseis",
+  "dezessete",
+  "dezoito",
+  "dezenove"
 };
 
 static const char* const TENS[] = {
   "",
-  "diez",
-  "veinte",
-  "treinta",
-  "cuarenta",
-  "cincuenta",
-  "sesenta",
+  "dez",
+  "vinte",
+  "trinta",
+  "quarenta",
+  "cinquenta",
+  "sessenta",
   "setenta",
-  "ochenta",
+  "oitenta",
   "noventa"
 };
 
 static const char* const TENSPLUS[] = {
   "",
-  "dieci",
-  "veinti",
-  "treinta y ",
-  "cuarenta y ",
-  "cincuenta y ",
-  "sesenta y ",
-  "setenta y ",
-  "ochenta y ",
-  "noventa y "
+  "deze",
+  "vinte e ",
+  "trinta e ",
+  "quarenta e ",
+  "cinquenta e ",
+  "sessenta e ",
+  "setenta e ",
+  "oitenta e ",
+  "noventa e "
 };
 
-static const char* STR_OH_CLOCK = "en punto";
-static const char* STR_NOON = "mediodía";
-static const char* STR_MIDNIGHT = "medianoche";
-static const char* STR_QUARTER = "cuarto";
-static const char* STR_TO = "menos";
-static const char* STR_PAST = "y";
-static const char* STR_HALF = "media";
-static const char* STR_AFTER = "y";
+static const char* STR_OH_CLOCK = "em ponto";
+static const char* STR_NOON = "meio dia";
+static const char* STR_MIDNIGHT = "meia noite";
+static const char* STR_QUARTER = "quinze";
+static const char* STR_TO = "pras";
+static const char* STR_PAST = "e";
+static const char* STR_HALF = "meia";
+static const char* STR_AFTER = "e";
 
 static size_t append_number(char* words, int num) {
   int tens_val = num / 10 % 10;
