@@ -5,8 +5,8 @@
 
 #define MY_UUID { 0x86, 0xF3, 0xCD, 0xE4, 0xB6, 0x31, 0x41, 0xFE, 0x80, 0xC4, 0xAE, 0x95, 0xF2, 0x60, 0xAD, 0x59 }
 PBL_APP_INFO(MY_UUID,
-             "Fuzzy Time ES",
-             "Pebble Technology and knopfler19",
+             "Fuzzy Time ptBR",
+             "Pebble Technology, knopfler19 and translation by nGoline",
              1, 0, /* App version */
              DEFAULT_MENU_ICON,
              APP_INFO_WATCH_FACE);
@@ -31,7 +31,7 @@ static void handle_minute_tick(AppContextRef app_ctx, PebbleTickEvent* e) {
 static void handle_init(AppContextRef ctx) {
   (void) ctx;
 
-  window_init(&s_data.window, "Fuzzy Time ES");
+  window_init(&s_data.window, "Fuzzy Time ptBR");
   const bool animated = true;
   window_stack_push(&s_data.window, animated);
 
